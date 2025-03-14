@@ -1,0 +1,237 @@
+
+body {
+  background: #141619;
+}
+.cursor-pointer {
+  cursor: pointer;  
+}
+.btn-gradient, .getintouch-btn{
+  background: linear-gradient(to bottom right, #665dcd, #5fa4e6, #d2ab67) !important;
+}
+.hero-heading {
+  font-size: 74px;
+  line-height: 100px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to bottom right, #665dcd, #5fa4e6, #d2ab67);
+ /* border-radius: 50%;*/
+}
+.about-box:hover {
+  background: linear-gradient(to bottom right, #665dcd, #5fa4e6, #d2ab67);
+}
+.arrow-btn {
+  width: 50px;
+  height: 50px;
+}
+/* ----------------moving--------------------------------------- */
+.marquee {
+  height: 400px;
+}
+.marquee2 {
+  margin-top: -100px;
+  height: 400px;
+}
+.marquee-track {
+  flex-direction: column;
+  gap: 4rem;
+  animation: marquee-moving 20s linear infinite;
+}
+@keyframes marquee-moving {
+  to {
+    transform: translateY(-100%);
+  }
+}
+.moving-logos {
+  width: 160px;
+  padding: 40px;
+  border: 1px solid #41557280;
+  border-radius: 8px;
+  background: linear-gradient(#1b1b1e1a, #41557226);
+}
+.moving-logos img {
+  width: 100%;
+}
+/* ------------------------------------------------------ */
+.market-maker-bg img {
+  right: -20%;
+  top: -30%;
+  transform: rotate(40deg);
+  opacity: 0.8;
+}
+.partners {
+  margin-top: 100px;
+}
+.about-box-border-1 {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.about-box-border-2 {
+  border-bottom: 2px solid white;
+}
+.about-box-border-3 {
+  border-right: 2px solid white;
+}
+.partners-bg-components {
+  top: -60%;
+  left: -15%;
+  transform: translateX(-35%);
+  max-width: 600px;
+}
+.partners-bg-components-2 {
+  left: 30px;
+  top: 20%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  opacity: 0.8;
+}
+.partner-img-1 {
+  left: 100%;
+  top: 30%;
+}
+.partner-img-2 {
+  top: -100%;
+  left: 60%;
+}
+.testimonial-img-logo {
+  width: 100px;
+}
+.team-section-bg {
+  left: -20%;
+  bottom: -50px;
+  opacity: 0.8;
+}
+.z-index-negative-1{
+  z-index: -1;
+}
+.contact-section-bg {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+.testimonial1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.testimonial1.active {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .moving-logos {
+    width: 100px;
+    padding: 25px;
+  }
+  .hero-para,
+  .About-para,
+  .market-section,
+  .client-review {
+    width: 75% !important;
+  }
+  .market-maker-bg img {
+    right: -76%;
+    top: -30%;
+  }
+}
+@media (max-width: 768px) {
+  .market-maker-bg img {
+    top: 3%;
+    right: auto;
+    left: 36%;
+    transform: translateX(-50%);
+  }
+  .hero-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero-para,
+  .About-para,
+  .market-section,
+  .client-review {
+    width: 90% !important;
+  }
+  .about-box-border-1, .about-box-border-2 , .about-box-border-3, .about-box-border-4{
+    border: 2px solid white;
+  }
+  .partners-bg-components {
+    left: -40%;
+  }
+  .partners-bg-components-2 {
+    left: -25px;
+  }
+}
+@media (max-width: 576px) {
+  .partner-first-side {
+    margin-bottom: 130px;
+  }
+  .partners-bg-components-2 {
+    left: 0%;
+    top: 0%;
+  }
+  .about-box-border-1, .about-box-border-2, .about-box-border-3{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2px solid white;
+  }
+  .about-box-border-4 {
+    border: none;
+  }
+  .partners-bg-components {
+    left: -90%;
+  }
+  .partners-bg-components-2 {
+    top: 6%;
+  }
+  .team-section-bg {
+    left: 6%;
+    bottom: -63px;
+  }
+  .partner-img-1, .partner-img-2, .partner-img-3{
+    width: 40% !important;
+  }
+  .partner-img-1 {
+    left: 63%;
+    top: 42%;
+}
+}
+@media (max-width: 376px) {
+  .partners-bg-components-2 {
+    left: 0px;
+    top: 2%;
+  }
+  .partner-first-side {
+    margin-bottom: 100px;
+  }
+  .partners {
+    margin-top: 0px;
+  }
+  .arrow-btn {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .partners-bg-components {
+    top: -60%;
+    left: -130%;
+  }
+  .client-position {
+    font-size: 13px !important;
+  }
+  .team-section-bg {
+    left: 8%;
+  }
+  .partner-img-1, .partner-img-2, .partner-img-3{
+    width: 30% !important;
+  }
+  .partner-img-1 {
+    left: 45%;
+  }
+  .partner-img-2 {
+    left: 30%;
+  }
+}
